@@ -1,0 +1,57 @@
+body {
+  background-color: skyblue;
+}
+
+#header {
+  text-align: center;
+  padding-top: 28px;
+
+}
+
+.topButtons {
+  padding-top: 25px;
+}
+
+.button {
+  float: right;
+  border-radius: 30px;
+  color: white;
+  background-color: darkorange;
+  border: none;
+  font-size: 25px;
+  padding: 10px 20px; /* vertical, horizontal */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: grey;
+}
+
+.pokerImage {
+  max-width: 100%; /* these are the same as class="img_fluid" */
+  height: auto; /* these are the same as class="img_fluid" */
+  padding-top: 25px;
+  padding-bottom: 30px; /* matching padding */
+  border-radius: 125px;
+}
+
+.description {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 30px; /* matching padding */
+}
+
+.card {
+  border-radius: 15px 15px;
+  background-color:navy;
+}
+
+.cardText {
+  text-align: center;
+  color: white;
+}
+
+.cardImage {
+  border-radius: 0px 0px 15px 15px;
+}
+
