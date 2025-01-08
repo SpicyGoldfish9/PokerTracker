@@ -1,82 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
     <title>Sign Up</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <style>
-      
       body {
         display: flex;
-        flex-direction: column;
-        justify-content: center; /* Horizontal centering */
-        align-items: center;    /* Vertical centering */
-        background-color: #f0f8ff; 
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f8ff; /* Light blue background for a clean look */
         font-family: Arial, sans-serif;
+        margin: 0;
       }
 
       #header {
         font-size: 36px;
-        text-align: center;
         color: #333; /* Dark gray for a modern feel */
-        margin-bottom: 20px;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        text-decoration: none;
       }
 
-      .signupBox {
-        text-align: left;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        background: white;
-        border: 1px solid #ddd;
+      #header:hover {
+        text-decoration: none; /* Ensure no underline on hover */
+        color: #007BFF; /* Optional: Change color on hover for interactivity */
+      }
+
+      .card {
         border-radius: 10px;
+        max-width: 400px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern card look */
+        margin: 0 auto; /* used to center the card */
+        float: none; /* used to center the card */
       }
 
-      label {
-        margin-bottom: 5px;
-        cursor: text;
+      .form-control:focus {
+        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
       }
 
-      input {
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 15px;
-      }
-
-      input:focus {
-        border-color: #007BFF;
-        outline: none;
-        box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5); /* Highlight on focus */
-      }
-
-      button {
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
+      .btn-primary {
         transition: background-color 0.3s ease, transform 0.2s ease;
       }
 
-      button:hover {
+      .btn-primary:hover {
         background-color: #0056b3;
         transform: translateY(-2px);
       }
 
       h3 {
-        text-align: center;
         font-size: 14px;
-        color: #555; 
-        margin-top: 15px;
+        color: #555; /* Neutral text color */
       }
 
       a {
-        color: #007BFF;
+        color: #007bff;
         text-decoration: none;
         font-weight: bold;
       }
@@ -90,19 +70,46 @@
 
   <body>
     <div class="container">
-      <h1 id="header">Poker Tracker</h1>
-
-      <div class="signupBox">
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username">
-
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password">
-
-        <button type="submit">Sign Up</button>
+      <div class="text-center mb-4">
+        <a href="index.html" id="header">Poker Tracker</a>
       </div>
 
-      <h3>Already a user? <a href="login.html">Log In</a></h3>
+      <div class="card p-4">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-control"
+              placeholder="Enter your username"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Log In</button>
+        </form>
+      </div>
+
+      <div class="text-center mt-3">
+        <h3>
+          Existing User? <a href="login.html">Log In</a>
+        </h3>
+      </div>
     </div>
+
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
