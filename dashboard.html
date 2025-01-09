@@ -11,13 +11,22 @@
         padding-top: 20px;
       }
       
-      .form-control {
+      .form-control, .form-select {
         box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
-
+      }
+      .addButton {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
       }
 
-      .btn {
+      .btn-primary {
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
 
+      .btn-primary:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
       }
       
     </style>
@@ -90,7 +99,7 @@
             />
         </div>
 
-        <div class="col-4 d-flex justify-content-center align-items-center" style="height: 100px;">
+        <div class="col-4 addButton">
           <button class="btn btn-primary">Add Session</button>
         </div>
       </div>
